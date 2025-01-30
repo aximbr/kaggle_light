@@ -1,9 +1,11 @@
 services:
   jupyter:
+    env_file:
+      - devcontainer.env
     build: 
       context: ..
       dockerfile: .devcontainer/Dockerfile
-    image: kaggle_light_image
+    image: kaggle_light
     volumes:
       - ../app:/kaggle
     ports:
