@@ -9,7 +9,9 @@
             "extensions": [
                 "ms-python.python",
                 "ms-python.vscode-pylance",
-                "ms-toolsai.jupyter"],
+                "ms-toolsai.jupyter",
+                "ms-python.debugpy"
+            ],
             "python.defaultInterpreterPath": "/usr/local/bin/python"
         }
     }                           
