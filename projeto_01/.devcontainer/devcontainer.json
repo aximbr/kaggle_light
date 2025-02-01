@@ -1,5 +1,5 @@
 {
-    "name": "kaggle_light",
+    "name": "${workspaceFolderBasename}",
     "dockerComposeFile": "docker-compose.yml",
     "service": "jupyter",
     "workspaceFolder": "/kaggle",
