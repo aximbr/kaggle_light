@@ -1,0 +1,13 @@
+services:
+  jupyter:
+    env_file:
+      - devcontainer.env
+    build: 
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    image: "${workspaceFolderBasename}"
+    volumes:
+      - ..:/kaggle
+    ports:
+      - 8888:8888
+    command: "jupyter notebook --notebook-dir=/kaggle/working --ip=0.0.0.0 --port=8888 --no-browser --allow-root --ServerApp.token='' --ServerApp.password=''"

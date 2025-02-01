@@ -1,0 +1,18 @@
+{
+    "name": "${workspaceFolderBasename}",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "jupyter",
+    "workspaceFolder": "/kaggle",
+    "customizations": {
+        "vscode": {
+            "settings": {"terminal.integrated.shell.linux": "/bin/bash"},
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                "ms-python.debugpy"
+            ],
+            "python.defaultInterpreterPath": "/usr/local/bin/python"
+        }
+    }                           
+}
