@@ -1,7 +1,7 @@
 {
-    "name": "${localWorkspaceFolderBasename}",
-    "dockerComposeFile": "docker-compose.yml",
-    "service": "jupyter",
+    "name": "projeto_02",
+    "dockerComposeFile": ["../../docker-compose.yml"],
+    "service": "projeto_02",
     "workspaceFolder": "/kaggle",
     "customizations": {
         "vscode": {
