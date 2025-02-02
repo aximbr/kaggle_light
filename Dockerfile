@@ -8,8 +8,8 @@ RUN pip install --upgrade pip
 
 COPY requirements.txt /tmp/requirements.txt
 
-RUN pip install -r /tmp/requirements.txt && \
+RUN pip install --no-cache-dir -r /tmp/requirements.txt && \
   rm /tmp/requirements.txt
 
 # Install Jupyter Notebook
-RUN pip install jupyter
+RUN pip install --no-cache-dir jupyter
