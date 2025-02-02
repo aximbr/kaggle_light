@@ -1,5 +1,5 @@
 {
-    "name": "${workspaceFolderBasename}",
+    "name": "${localWorkspaceFolderBasename}",
     "dockerComposeFile": "docker-compose.yml",
     "service": "jupyter",
     "workspaceFolder": "/kaggle",

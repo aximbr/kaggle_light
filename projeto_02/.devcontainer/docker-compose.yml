@@ -5,7 +5,7 @@ services:
     build: 
       context: ..
       dockerfile: .devcontainer/Dockerfile
-    image: "${workspaceFolderBasename}"
+    image: kaggle_light
     volumes:
       - ..:/kaggle
     ports:
