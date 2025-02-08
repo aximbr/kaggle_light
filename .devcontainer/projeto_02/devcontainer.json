@@ -1,6 +1,6 @@
 {
     "name": "projeto_02",
-    "dockerComposeFile": ["../../docker-compose.yml"],
+    "dockerComposeFile": ["../../docker-compose_02.yml"],
     "service": "projeto_02",
     "workspaceFolder": "/kaggle",
     "customizations": {

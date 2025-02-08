@@ -1,0 +1,14 @@
+services:
+  projeto_01:
+    env_file:
+      - devcontainer.env
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: kaggle_light
+    volumes:
+      - ./projeto_01:/kaggle
+    ports:
+      - 8888:8888
+    command: "jupyter notebook --notebook-dir=/kaggle/working --ip=0.0.0.0 --port=8888 --no-browser --allow-root --ServerApp.token='' --ServerApp.password=''"
+
