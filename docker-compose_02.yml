@@ -1,7 +1,8 @@
 services:
   projeto_02:
     env_file:
-      - devcontainer.env
+      - path: ./devcontainer.env
+        required: false
     build: 
       context: .
       dockerfile: Dockerfile
